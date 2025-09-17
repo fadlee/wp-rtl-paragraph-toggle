@@ -55,6 +55,7 @@ jobs:
       run: |
         echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
         echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+        echo "Extracted version: ${GITHUB_REF#refs/tags/v}"
 
     - name: Create Release
       uses: actions/create-release@v1
@@ -65,6 +66,9 @@ jobs:
         release_name: Release ${{ env.VERSION }}
         draft: false
         prerelease: false
+
+    - name: List dist directory
+      run: ls -la ./dist/
 
     - name: Upload Release Asset
       uses: actions/upload-release-asset@v1
