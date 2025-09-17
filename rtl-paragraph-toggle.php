@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: RTL Paragraph Toggle
- * Description: Add a toggle in Paragraph block to set dir="rtl" and auto-apply custom RTL typography.
+ * Description: Add a toggle in Paragraph block to set dir="rtl" and auto-apply custom RTL typography. Works with any WordPress theme.
  * Version: 1.0.0
  * Author: You
  * License: GPL-2.0+

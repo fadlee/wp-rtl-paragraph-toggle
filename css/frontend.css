@@ -1,15 +1,9 @@
 /* Load Amiri on the frontend */
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
 
-/* Your requested CSS (kept exactly) */
-.td-main-content-wrap .tdb-block-inner p[dir="rtl"],
-.td-post-content p[dir="rtl"] {
-  font-family: 'Amiri', serif !important;
-  font-size: 1.5em !important;
-  line-height: 2 !important;
-}
-
-/* Optional general fallback (works outside Tribune theme areas, harmless to keep) */
+/* Universal RTL paragraph styling */
 p[dir="rtl"] {
   font-family: 'Amiri', serif;
+  font-size: 1.5em;
+  line-height: 2;
 }
